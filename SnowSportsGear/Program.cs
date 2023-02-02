@@ -36,6 +36,8 @@ namespace SnowSportsGear
 
             app.MapControllers();
 
+            DbInitializer.Seed(app);
+
             app.Run();
         }
     }
